@@ -1,0 +1,8 @@
+altgraph==0.17
+evdev==1.3.0
+mctools==1.0.0
+pkg-resources==0.0.0
+pyinstaller-hooks-contrib==2020.7
+pynput==1.7.1
+python-xlib==0.27
+six==1.15.0
