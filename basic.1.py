@@ -53,8 +53,8 @@ rconcommand = "teleport Dain503 0 10 -1000"
 rconcommand = "data get block 4 4 77"
     # sign : 4, 4, 77 has the following block data: {Color: "black", x: 4, Text4: '{"text":""}', y: 4, Text3: '{"text":""}', z: 77, Text2: '{"text":""}', id: "minecraft:sign", Text1: '{"text":"aa"}'}
 rconcommand = "data get entity @e[limit=1, nbt={TileX:4,TileY:4,TileZ:77}]"
-rconcommand = "data get block 5 4 77"
-rconcommand = "execute as Danjang403 at @s run execute as @e[type=armor_stand,distance=..10] run data get entity @s Pos"
+# rconcommand = "data get block 5 4 77"
+# rconcommand = "execute as Danjang403 at @s run execute as @e[type=armor_stand,distance=..10] run data get entity @s Pos"
 
 #
 rcon.stop()
