@@ -7,11 +7,15 @@ Learn Python through Minecraft
         * https://www.python.org/downloads/windows/
     B. Check : 
         python --version
+    C. Add python path : 
+        Add user environment path below, after opening system variable via Control Panel
+            %USERPROFILE%\AppData\local\programs\python\python38\lib\site-packages
+        *  uninstall Anaconda or Miniconda if they are installed, to avoid path confusion, particularly when running 'pip install XXX' 
 
 2. Install Sublime text
     A. Download and install : https://www.sublimetext.com/
     B. Check : 
-    	Create test.py file and type below
+        Create test.py file and type below
       		print('test')
     	[Ctrl] + [b] to run the above line
     C. Customize : 

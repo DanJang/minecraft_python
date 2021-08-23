@@ -1,19 +1,22 @@
 
 from mctools import RCONClient  # Import the RCONClient
+    # pip install mctools
 import sys
 
-HOST = '192.168.0.199'  # Haryun's world. Experiment world
+HOST = '192.168.0.10'  # Haryun's world. Experiment world
 #HOST = 'localhost'  # this computer
 PORT = 25575    # Port number of the RCON server
-PASSWORD = "password"    # password we set like "rcon.password={password}" in server.properties file 
+PASSWORD = "9004"    # password we set like "rcon.password={password}" in server.properties file 
 
 # Create the RbCONClient:
 rcon = RCONClient(HOST, port=PORT)
+    #print(rcon.login(PASSWORD))  # should be True
 
 # Login to RCON:
 if not rcon.login(PASSWORD):
     print('wrong password')
     sys.exit()
+print('connection established')
 
 # Send command to RCON - broadcast message to all players:
 # https://www.pcgamesn.com/minecraft/minecraft-console-commands-and-cheats
@@ -55,6 +58,12 @@ rconcommand = "data get block 4 4 77"
 rconcommand = "data get entity @e[limit=1, nbt={TileX:4,TileY:4,TileZ:77}]"
 # rconcommand = "data get block 5 4 77"
 # rconcommand = "execute as Danjang403 at @s run execute as @e[type=armor_stand,distance=..10] run data get entity @s Pos"
+rconcommand = "execute as Danjang403 at @s run tp @s ~ ~10 ~"
+# rconcommand = "weather rain 30"  
+
+#
+print("sending command : {0}".format(rconcommand))
+rcon.command(rconcommand)
 
 #
 rcon.stop()
