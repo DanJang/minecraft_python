@@ -16,8 +16,8 @@ Learn Python through Minecraft
     A. Download and install : https://www.sublimetext.com/  
     B. Check :   
         Create test.py file and type below  
-      		print('test')  
-    	[Ctrl] + [b] to run the above line  
+            print('test')  
+        [Ctrl] + [b] to run the above line  
     C. Customize :   
         Preferences > Settings and modify "translate_tabs_to_spaces": true  
 
